@@ -1,0 +1,10 @@
+apple
+crate
+slate
+blade
+charm
+ghost
+query
+jewel
+zebra
+index
