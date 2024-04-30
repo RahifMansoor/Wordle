@@ -27,11 +27,11 @@ public class Main extends Application {
         dialog.initModality(Modality.APPLICATION_MODAL); // Set modality to block interaction with other windows
         dialog.setTitle("How to Play");
 
-        // Create components for the dialog
+        //Create components for the dialog
         Label instructionsLabel = new Label("Welcome to Wordle!\n\n"
             + "Instructions:\n"
             + "- Guess the 5-letter word and type it into the input field.\n"
-            + "- After each guess, the color of the tiles will change to show how close your guess was.\n"
+            + "- The color of the tiles changes to show how close your guess was.\n"
             + "  Green: Correct letter in the correct position.\n"
             + "  Yellow: Correct letter in the wrong position.\n"
             + "  Grey: Incorrect letter.\n"
@@ -44,7 +44,7 @@ public class Main extends Application {
         layout.getChildren().addAll(instructionsLabel, closeButton);
         layout.setAlignment(Pos.CENTER);
 
-        // Set the scene and show the stage
+        //Set the scene and show the stage
         Scene dialogScene = new Scene(layout, 400, 250);
         dialog.setScene(dialogScene);
         dialog.showAndWait(); // Show the dialog and wait for it to be closed before returning focus
